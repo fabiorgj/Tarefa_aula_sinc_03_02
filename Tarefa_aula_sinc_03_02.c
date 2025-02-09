@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "pico/stdlib.h"       // SDK do Raspberry Pi Pico
 #include "hardware/i2c.h"      // Hardware I2C
-#include "inc/ssd1306.h"       // Driver do display OLED
+#include "inc/ssd1306.h"       // Driver do display
 #include "inc/font.h"          // Fontes para o display
 #include "hardware/pio.h"      // Programmable I/O (PIO)
 #include "hardware/clocks.h"   // Controle de clock
@@ -28,7 +28,7 @@
 static volatile uint32_t tempo_anterior = 0; // Timer para debounce
 static PIO pio;                // Instância do PIO
 static uint sm;                // State Machine do PIO
-ssd1306_t ssd;                 // Estrutura do display OLED
+ssd1306_t ssd;                 // Estrutura do display
 bool cor = true;               // Cor de fundo do display
 
 
